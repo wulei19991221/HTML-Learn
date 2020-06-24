@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>剑灵动画模仿</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        @keyframes swing1 {
+            0%{
+                transform: rotate(-2deg);
+            }
+            100%{
+                transform: rotate(2deg);
+            }
+        }
+        @keyframes swing2 {
+            0%{
+                transform: rotate(2deg);
+            }
+            100%{
+                transform: rotate(-2deg);
+            }
+        }
+        body{
+            background-image: url("images/bg.jpg");
+            overflow: auto;
+        }
+        .ui{
+            width: 1015px;
+            height: 415px;
+            margin: 200px auto;
+        }
+        a{
+            float: left;
+            width: 127px;
+            height: 355px;
+            margin-right: 18px;
+            background-image: url("images/wp-spr.png");
+        }
+        a:nth-of-type(even){
+            margin-top: 50px;
+            animation: swing1 linear infinite 2s alternate;
+        }
+         a:nth-of-type(odd){
+            animation: swing2 linear infinite 2s alternate;
+        }
+        a:nth-of-type(1){
+            background-position: -2px -188px;
+        }
+        a:nth-of-type(2){
+            background-position: -147px -139px;
+        }
+        a:nth-of-type(3){
+            background-position: -292px -188px;
+        }
+        a:nth-of-type(4){
+            background-position: -436px -139px;
+        }
+        a:nth-of-type(5){
+            background-position: -582px -188px;
+        }
+        a:nth-of-type(6){
+            background-position: -726px -139px;
+        }
+        a:nth-of-type(7){
+            background-position: -872px -188px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ui">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+</body>
+</html>

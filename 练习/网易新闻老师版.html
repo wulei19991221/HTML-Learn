@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>网易新闻老师版</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .news-list a:hover {
+            color: red;
+        }
+
+        .news-title a:hover {
+            color: red;
+        }
+
+        .wrapper {
+            width: 300px;
+            height: 358px;
+            margin: 10px auto;
+            background-color: white;
+            border-top: 1px blue solid;
+        }
+
+        .news-title {
+            height: 30px;
+            display: inline-block;
+            border-top: red 1px solid;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+
+        .news-title a {
+            color: #40406b;
+            font-weight: bold;
+        }
+
+        .news-img {
+            height: 150px;
+        }
+
+        .news-img h2 {
+            color: white;
+            margin-top: -30px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+
+        .news-list {
+            margin-top: 20px;
+        }
+
+        .news-list li::before {
+            content: '■';
+            color: gray;
+            font-size: 12px;
+            padding-right: 8px;
+        }
+
+        .news-list li {
+            margin-bottom: 17px;
+        }
+
+        .news-list li a {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<!--创建网易新闻外侧容器-->
+<div class="wrapper">
+    <!--创建新闻标题-->
+    <h2 class="news-title">
+        <a href="#">财经</a>
+
+    </h2>
+    <div class="news-img">
+        <a href="#"><img src="网易新闻.webp" alt=""></a>
+        <h2>618大促成交万亿</h2>
+    </div>
+
+    <ul class="news-list">
+        <li><a href="#">北京皮卡销量暴跌 有汽车4S店直接停销</a></li>
+        <li><a href="#">雷军卸任北京金山软件有限公司执行董事</a></li>
+        <li><a href="#">国家存储器基地项目二期开工！</a></li>
+        <li><a href="#">这些随处可见的公司 大洋彼岸屡创股价新高</a></li>
+    </ul>
+</div>
+</body>
+</html>

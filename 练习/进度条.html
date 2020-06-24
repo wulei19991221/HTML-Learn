@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            background-color: green;
+        }
+        .progressBar{
+            width: 300px;
+            height: 20px;
+            border-radius: 10px;
+            border: red solid 1px;
+            background-color: yellow;
+            margin: 300px auto;
+        }
+        .download{
+            animation: progressbar 6s;
+            background-color: red;
+            height: 100%;
+              border-radius: 10px;
+        }
+        @keyframes progressbar {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="progressBar">
+    <div class="download"></div>
+</div>
+</body>
+</html>
